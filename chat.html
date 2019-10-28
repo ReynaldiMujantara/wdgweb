@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+
+<body>
+<button class="open-button zoom" onClick="openForm()">
+				<img src="images/icon/message.png" width="70" height="70">
+			</button>
+	<div class="chat-popup" id="myForm">
+	  <div class="form-container">
+	    <h4 style="padding: 5px;">Molen Support</h4>
+      <input type="text" name="name" placeholder="Name.." required>
+      <input type="text" name="cell" placeholder="No.Phone.." required>
+	    <textarea placeholder="Type message.." name="msg" required></textarea>
+	    <button type="submit" class="btn">Send</button>
+	    <button type="button" class="btn cancel" onClick="closeForm()">Close</button>
+	  </div>
+	</div>
+		
+	<script>
+	function openForm() {
+	    document.getElementById("myForm").style.display = "block";
+	}
+	function closeForm() {
+	    document.getElementById("myForm").style.display = "none";
+	}
+	function openForm2() {
+	    document.getElementById("loginModal").style.display = "block";
+	}
+	function closeForm2() {
+	    document.getElementById("loginModal").style.display = "none";
+	}
+	</script>
+</body>
+</html>
